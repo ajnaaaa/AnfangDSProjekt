@@ -98,7 +98,7 @@ def render_navbar():
 
     cols = st.columns([2] + [1] * len(PAGES) + [4])
     with cols[0]:
-        st.page_link("app.py", label="🎵 From Streams to Stages")
+        st.page_link("pages/1_Home.py", label="🎵 From Streams to Stages")
     for i, page in enumerate(PAGES):
         with cols[i+1]:
             st.page_link(page["page"], label=f"{page['icon']} {page['label']}")
